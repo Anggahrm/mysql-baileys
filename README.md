@@ -14,7 +14,7 @@ CREATE TABLE `auth` (
 	`session` varchar(50) NOT NULL,
 	`id` varchar(100) NOT NULL,
 	`value` LONGTEXT DEFAULT NULL,
-	UNIQUE KEY `idxunique` (`session`,`id`),
+	PRIMARY KEY (`session`,`id`),
 	KEY `idxsession` (`session`),
 	KEY `idxid` (`id`)
 ) ENGINE=InnoDB
