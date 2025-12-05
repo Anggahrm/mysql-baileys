@@ -17,7 +17,7 @@ CREATE TABLE `auth` (
 	UNIQUE KEY `idxunique` (`session`,`id`),
 	KEY `idxsession` (`session`),
 	KEY `idxid` (`id`)
-) ENGINE=MyISAM
+) ENGINE=InnoDB
 ```
 
 ### 2. Install mysql-baileys
