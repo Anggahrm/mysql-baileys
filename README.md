@@ -12,9 +12,9 @@ If you want with your specifications, if you don't create it, the code will auto
 ```sql
 CREATE TABLE `auth` (
 	`session` varchar(50) NOT NULL,
-	`id` varchar(100) NOT NULL,
+	`id` varchar(80) NOT NULL,
 	`value` LONGTEXT DEFAULT NULL,
-	UNIQUE KEY `idxunique` (`session`,`id`),
+	PRIMARY KEY (`session`,`id`),
 	KEY `idxsession` (`session`),
 	KEY `idxid` (`id`)
 ) ENGINE=InnoDB
